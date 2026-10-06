@@ -4,7 +4,7 @@ This repo contains a markdown file that displays procedure of the GitHub Setup r
 GitHub Workflow: Microsoft Azure Docs Contribution Setup
 This document records the Git and GitHub setup used to contribute to the Microsoft Azure documentation repository.
 
-Repository: MicrosoftDocs/azure-docs-pr
+## 1. Repository: MicrosoftDocs/azure-docs-pr
 
 1. Fork the Microsoft repository
 The first step was to fork the Microsoft repository to my personal GitHub account.
@@ -22,7 +22,7 @@ A fork creates my own copy of the Microsoft repository under my GitHub account.
 
 I can make changes in my fork and later create a pull request to the original Microsoft repository.
 
-2. Clone the fork to the local environment
+## 2. Clone the fork to the local environment
 I cloned my fork to my local computer.
 
 git clone https://github.com/klokhande007/azure-docs-pr.git
@@ -34,7 +34,7 @@ C:\Users\klokhande\OneDrive - Microsoft\From Nuance\DICOM\azure-docs-pr
 Why clone?
 Cloning downloads the repository to the local computer so that I can work with the files using Git and my development tools.
 
-3. Navigate to the cloned repository
+## 3. Navigate to the cloned repository
 Because the Windows path contains spaces, the path must be enclosed in quotation marks when using Git Bash.
 
 cd "C:\Users\klokhande\OneDrive - Microsoft\From Nuance\DICOM\azure-docs-pr"
@@ -44,7 +44,7 @@ pwd
 
 This confirms that Git Bash is working inside the cloned repository.
 
-4. Check the existing remote repository
+## 4. Check the existing remote repository
 After cloning, I checked the configured Git remotes:
 
 git remote -v
@@ -63,7 +63,7 @@ origin → my GitHub fork
 
 So I do not need to add origin manually because git clone already configured it.
 
-5. Add the Microsoft repository as upstream
+## 5. Add the Microsoft repository as upstream
 I added the original Microsoft repository as another remote:
 
 git remote add upstream https://github.com/MicrosoftDocs/azure-docs-pr.git
@@ -82,7 +82,7 @@ git fetch upstream
 
 can be used to retrieve information about changes in Microsoft's repository.
 
-6. Verify both remotes
+## 6. Verify both remotes
 I ran:
 
 git remote -v
@@ -121,7 +121,7 @@ Git remote	Points to	Purpose
 origin	My GitHub fork	Push my work
 upstream	Microsoft's repository	Get updates from Microsoft
 Local repository	My computer	Edit and commit files
-7. Current status
+## 7. Current status
 At this point, the repository setup is complete.
 
 I have not started editing any documentation files yet.
@@ -140,7 +140,7 @@ Current status:
 [ ] Commit changes
 [ ] Push the branch to my fork
 [ ] Create a pull request
-8. Next step: Create a branch
+## 8. Next step: Create a branch
 A branch should be created when I am ready to start a specific documentation task.
 
 For example:
@@ -151,7 +151,7 @@ The branch provides a separate workspace for the changes.
 
 I should avoid making task-specific changes directly on the main branch.
 
-9. Expected contribution workflow
+## 9. Expected contribution workflow
 Once I start working, the general workflow will be:
 
 Create branch
